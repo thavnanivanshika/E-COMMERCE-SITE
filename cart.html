@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart-mldc</title>
+    <LINK REL="STYLESHEET" HREF="STYLE.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel ="stylesheet"href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/InShot_20240614_122708056.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href ="index.html">Home</a></li>
+                    <li><a href ="product.html">Product</a></li>
+                    <li><a href ="about.html">About</a></li>
+                    <li><a href ="contact.html">Contact</a></li>
+                    <li><a href ="account.html">Account</a></li>
+                </ul>
+             </nav>
+             <a href="cart.html"><img src="images/bag.png" width="30px" height="30px"></a>
+             <img src="images/more.png" class="menu-icon" onclick="menutoggle()" >
+        </div>      
+    </div>
+    <!--------cart item details------->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/1.jpg">
+                    <div>
+                        <p>Macrame Cotton Braided Rope</p>
+                        <small>₹179.00</small>
+                        <br>
+                        <a href="">remove</a>
+                    </div>
+                </div>
+            </td>      
+            <td><input type="number" value="1"></td>
+            <td>₹179.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/flyer.jfif">
+                    <div>
+                        <p>Flyer</p>
+                        <small>Free</small>
+                        <br>
+                        <a href="">remove</a>
+                    </div>
+                </div>
+            </td>      
+            <td><input type="number" value="1"></td>
+            <td>Free</td>
+        </tr>
+       
+    </table>
+    <div class="totl-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₹179.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>189.00</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!--------footer------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Download Our App</h3>
+                <p>Download app for Android and IOS mobile phone.</p>
+                <div class="applogo">
+                    <img src="images/download (6).jfif">
+                </div>
+            </div>
+            <div class="footer-col2">
+                <img src="images/InShot_20240614_122708056.png" >
+                <p>Motilal Dulichand: Premier Indian Manufacturer & Global Supplier of High-Class Elastics and Webbings</p>
+            </div>
+            <div class="footer-col3">
+                <h3>useful links</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>blog post</li>
+                    <li>return policy</li>
+                    <li>join affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>follow us</h3>
+                <ul>
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>instagram</li>
+                    <li>youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright © Motilal Dulichand Pvt. Ltd. . All Rights Reserved.</p>
+    </div>
+</div>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight=="0px";
+    function menutoggle(){
+        if (menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight="200px"  
+            }
+        else
+            {
+                menuitems.style.maxHeight="0px"
+            }
+    }
+</script>
+</body>
+</html>

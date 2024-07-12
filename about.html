@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <LINK REL="STYLESHEET" HREF="STYLE.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel ="stylesheet"href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/InShot_20240614_122708056.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href ="index.html">Home</a></li>
+                    <li><a href ="product.html">Product</a></li>
+                    <li><a href ="about.html">About</a></li>
+                    <li><a href ="contact.html">Contact</a></li>
+                    <li><a href ="account.html">Account</a></li>
+                </ul>
+             </nav>
+             <a href="cart.html"><img src="images/bag.png" width="30px" height="30px"></a>
+             <img src="images/more.png" class="menu-icon" onclick="menutoggle()" >
+        </div>      
+    </div>
+<!--------about us------->
+<div class="about-section">
+    <div class="container">
+        <h2>About Us</h2>
+        <div class="row">
+            
+            <div class="about-text">
+                <p>The firm <b>MOTILAL DULICHAND</b> was established as a FAMILY BUSINESS in 1950 and was engaged in trading. In 1964 the Company went into the manufacturing <b>Cotton/Synthetic narrow fabrics,</b> and by 1980's developed a wide array of products.
+
+                    Growth continued and 1989 <b>MOTILAL DULICHAND</b> convered into a <b>Private Limited Company.</b>
+                    
+                    Development was the core focus of the Company, which lead to modernisation of the organisation, including the import of latest hi- tech machinery for the manufacture of quality goods.Establishing its lead to meet the growing demand, expansion continued, in that two associate concerns were floted <b>-SPARK FIBRES </b>in the year 1970 and <b>FIBER LINKS</b> in the year 1984 as partnership firms, having similar product rang with the addition of dyeing and treatmnent of yarns and narrow woven fabrics.
+                    
+                    in the year 2002, a <b>100% Export Oriended Unit</b> was set up as for manufacture and export of similar products with the goal of having a greater international exposure.
+                    
+                    ALL THE GROUP COMPANIES ARE ISO 9001:2015 CERTIFIED.</p>
+            </div>
+            <div class="about-img">
+                <img src="images/a.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------footer------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Download Our App</h3>
+                <p>Download app for Android and IOS mobile phone.</p>
+                <div class="applogo">
+                    <img src="images/download (6).jfif">
+                </div>
+            </div>
+            <div class="footer-col2">
+                <img src="images/InShot_20240614_122708056.png" >
+                <p>Motilal Dulichand: Premier Indian Manufacturer & Global Supplier of High-Class Elastics and Webbings</p>
+            </div>
+            <div class="footer-col3">
+                <h3>useful links</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>blog post</li>
+                    <li>return policy</li>
+                    <li>join affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>follow us</h3>
+                <ul>
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>instagram</li>
+                    <li>youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright © Motilal Dulichand Pvt. Ltd. . All Rights Reserved.</p>
+    </div>
+</div>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight=="0px";
+    function menutoggle(){
+        if (menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight="200px"  
+            }
+        else
+            {
+                menuitems.style.maxHeight="0px"
+            }
+    }
+</script>
+</body>
+</html>

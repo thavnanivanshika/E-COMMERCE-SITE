@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+    <LINK REL="STYLESHEET" HREF="STYLE.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel ="stylesheet"href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/InShot_20240614_122708056.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href ="index.html">Home</a></li>
+                    <li><a href ="product.html">Product</a></li>
+                    <li><a href ="about.html">About</a></li>
+                    <li><a href ="contact.html">Contact</a></li>
+                    <li><a href ="account.html">Account</a></li>
+                </ul>
+             </nav>
+             <a href="cart.html"><img src="images/bag.png" width="30px" height="30px"></a>
+             <img src="images/more.png" class="menu-icon" onclick="menutoggle()" >
+        </div>      
+    </div>
+<!--------account page------->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/InShot_20240614_140934474.jpg">
+            </div>
+            <div class="col-2">
+               <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="indicator">
+
+                </div>
+                <form id="loginform">
+                    <input type="text" placeholder="username">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">forgot password</a>
+                </form>
+                <form id="regform">
+                    <input type="text" placeholder="username">
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="btn">Register</button>
+                    
+                </form>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------footer------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>Download Our App</h3>
+                <p>Download app for Android and IOS mobile phone.</p>
+                <div class="applogo">
+                    <img src="images/download (6).jfif">
+                </div>
+            </div>
+            <div class="footer-col2">
+                <img src="images/InShot_20240614_122708056.png" >
+                <p>Motilal Dulichand: Premier Indian Manufacturer & Global Supplier of High-Class Elastics and Webbings</p>
+            </div>
+            <div class="footer-col3">
+                <h3>useful links</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>blog post</li>
+                    <li>return policy</li>
+                    <li>join affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>follow us</h3>
+                <ul>
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>instagram</li>
+                    <li>youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright © Motilal Dulichand Pvt. Ltd. . All Rights Reserved.</p>
+    </div>
+</div>
+<!--------js for toggle form------->
+<script>
+    var loginform=document.getElementById("loginform");
+    var regform=document.getElementById("regform");
+    var indicator=document.getElementById("indicator");
+        function register(){
+            regform.style.transform="translatex(0px)"
+            loginform.style.transform="translatex(0px)"
+            indicator.style.transform="translatex(100px)"
+
+        }
+        function login(){
+            regform.style.transform="translatex(300px)"
+            loginform.style.transform="translatex(300px)"
+            indicator.style.transform="translatex(0px)"
+
+        }
+</script>
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight=="0px";
+    function menutoggle(){
+        if (menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight="200px"  
+            }
+        else
+            {
+                menuitems.style.maxHeight="0px"
+            }
+    }
+</script>
+</body>
+</html>
